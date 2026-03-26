@@ -280,13 +280,13 @@
     .cat-card:hover .cat-arrow { opacity: 1; transform: scale(1); }
 
     /* category bg images */
-    .ci-bridal   { background-image: url('https://images.unsplash.com/photo-1594552072238-b8a33785b6cd?w=600&q=80'); }
-    .ci-ball     { background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80'); }
-    .ci-long     { background-image: url('https://images.unsplash.com/photo-1572804013427-4d7ca7268217?w=600&q=80'); }
-    .ci-cocktail { background-image: url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&q=80'); }
-    .ci-filipiniana { background-image: url('https://images.unsplash.com/photo-1594938298603-5651c2682f7e?w=600&q=80'); }
+    .ci-bridal   { background-image: url('https://raw.githubusercontent.com/WiloftheWen/images/main/bridal.png'); }
+    .ci-ball     { background-image: url('https://raw.githubusercontent.com/WiloftheWen/images/main/ball.png'); }
+    .ci-long     { background-image: url('https://raw.githubusercontent.com/WiloftheWen/images/main/long.png'); }
+    .ci-cocktail { background-image: url('https://raw.githubusercontent.com/WiloftheWen/images/main/cocktail.png'); }
+    .ci-filipiniana { background-image: url('https://raw.githubusercontent.com/WiloftheWen/images/main/filipiniana.png'); }
     .ci-tuxedo   { background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80'); }
-    .ci-barong   { background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80'); }
+    .ci-barong   { background-image: url('https://raw.githubusercontent.com/WiloftheWen/images/main/Barong.png'); }
 
     /* ══════════════════════════════════════════
        GALLERY
@@ -837,15 +837,15 @@
         <div class="contact-list">
           <div class="contact-row">
             <div class="c-icon">📍</div>
-            <span>Davao City, Philippines</span>
+            <span>Unit F Magdragico Bldg, corner Legaspi & Magallanes St,Davao City, Philippines</span>
           </div>
           <div class="contact-row">
             <div class="c-icon">📞</div>
-            <span>+63 912 345 6789</span>
+            <span>+63 977 352 9657</span>
           </div>
           <div class="contact-row">
             <div class="c-icon">✉️</div>
-            <span>hello@clairesbridal.ph</span>
+            <span>emelyntolentino28@gmail.com</span>
           </div>
           <div class="contact-row">
             <div class="c-icon">🕐</div>
@@ -977,8 +977,8 @@
     <div class="about-grid">
       <div class="about-imgs reveal">
         <div class="about-frame"></div>
-        <img src="https://images.unsplash.com/photo-1606216794079-73f65cd85c3a?w=700&q=80" alt="Inside Claire's Bridal Couture" class="about-img-main"/>
-        <img src="https://images.unsplash.com/photo-1556909114-44e3e9399a2c?w=400&q=80" alt="Gown detail" class="about-img-accent"/>
+        <img src="https://raw.githubusercontent.com/WiloftheWen/images/main/inside.png" alt="Inside Claire's Bridal Couture" class="about-img-main"/>
+        <img src="https://raw.githubusercontent.com/WiloftheWen/images/main/detail.png" alt="Gown detail" class="about-img-accent"/>
         <div class="about-badge">
           <strong>10+</strong>
           <span>Years</span>
@@ -1024,7 +1024,7 @@
     </div>
 
 <div style="text-align:center; margin-top:20px;">
-  <a href="https://maps.google.com" target="_blank" class="btn-primary">
+  <a href="https://www.google.com/maps?q=7.066538699653794, 125.60496801746518" target="_blank" class="btn-primary">
     Open in Google Maps
   </a>
 </div>
@@ -1039,9 +1039,9 @@
         <span class="tagline">Elegance in Every Stitch</span>
         <p>Premium gown rentals for your most memorable occasions. Serving Davao City and surrounding areas since 2015.</p>
         <div class="social-row">
-          <a href="#" class="soc-btn" aria-label="Facebook">f</a>
-          <a href="#" class="soc-btn" aria-label="Instagram">✦</a>
-          <a href="#" class="soc-btn" aria-label="TikTok">▷</a>
+          <a href="https://www.facebook.com/profile.php?id=100054214311230" target="_blank" class="soc-btn" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/" target="_blank" class="soc-btn" aria-label="Instagram">🅾</a>
+          <a href="https://www.tiktok.com/" target="_blank" class="soc-btn" aria-label="TikTok">♪</a>
         </div>
       </div>
       <div class="footer-col">
@@ -1066,7 +1066,7 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Davao City, Philippines<br><br>+63 912 345 6789<br><br>hello@clairesbridal.ph<br><br>Mon–Sat: 9 AM – 6 PM</p>
+        <p>Unit F Magdragico Bldg, corner Legaspi & Magallanes St,Davao City, Philippines<br><br>+63 977 352 9657<br><br>emelyntolentino28@gmail.com<br><br>Mon–Sat: 9 AM – 6 PM</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1342,6 +1342,12 @@
     alert("Failed to send inquiry. Please try again.");
   }
 });
+
+function showToast() {
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 5000);
+  }
   /* ─────────────────────────────
      INIT
   ───────────────────────────── */
